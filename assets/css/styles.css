@@ -12,7 +12,7 @@ b {
 /*HEADER*/
 
 nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 85%;
     background-color: #FFC017;
@@ -326,4 +326,8 @@ aside {
     margin-bottom: 1em;
     width: 70%;
     margin-right: 15em;
+}
+
+@media screen and (max-width: 768px) {
+
 }
