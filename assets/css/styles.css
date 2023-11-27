@@ -12,11 +12,20 @@ b {
 /*HEADER*/
 
 nav {
+    position: fixed;
+    top: 0;
+    width: 85%;
     background-color: #FFC017;
     padding: 1.5% 8%;
     display: flex;
     justify-content: space-between;
     border-bottom: solid 1px #191919;;
+    z-index: 2;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+}
+
+nav.scrolled {
+    background-color: white;
 }
 
 a {
@@ -32,8 +41,10 @@ nav div .btn {
     width: 7em;
     height: 2.5em;
     border: none;
+    border-radius: 30px;
     font-family: 'Roboto', sans-serif;
     padding: 0.5em 1em;
+    transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
 }
 
 nav div .btn:hover {
@@ -47,6 +58,10 @@ nav div .btn:hover {
     padding: 0.5em 1em;
 }
 
+nav div .btn:hover.scrolled {
+    background-color: #1A8917;
+} 
+
 .btnActive {
     color: white;
     background-color: #191919;
@@ -56,6 +71,10 @@ nav div .btn:hover {
     border-radius: 30px;
     font-family: 'Roboto', sans-serif;
     padding: 0.5em 1em;
+}
+
+.btnGreen.scrolled {
+    background-color: #1A8917;
 }
 
 nav div a:last-child {
@@ -110,19 +129,24 @@ header p {
 
 /*MAIN*/
 
+#trendsMain {
+    padding: 0 6em;
+}
+
 #trendsDiv {
     display: flex;
     flex-wrap: wrap;
     padding: 1em 0;
     padding-left: 0;
     justify-content: center;
+    justify-content: space-between;
 }
 
 #trendsH {
     display: flex;
     align-items: center;
+    padding-left: 1.3em;
     padding-top: 3em;
-    padding-left: 13.5em;
     font-weight: 600;
 }
 
@@ -134,6 +158,7 @@ h3 {
 
 .trends {
     padding: 1em;
+    padding-left: 0;
     display: flex;
     align-items: flex-start;
     width: 30em;
@@ -205,7 +230,7 @@ hr {
 
 #bottom {
     display: flex;
-    padding: 0 8.5em;
+    padding: 0 6em;
     padding-top: 2em;
 }
 
@@ -299,4 +324,6 @@ aside {
 #btmHr {
     padding-bottom: 0;
     margin-bottom: 1em;
+    width: 70%;
+    margin-right: 15em;
 }
