@@ -295,7 +295,7 @@ aside {
     width: 14.5em;
 }
 
-#listBG {
+.listBG {
     display: flex;
     flex-wrap: wrap;
     padding-top: 1em;
@@ -303,7 +303,7 @@ aside {
     width: 80%;
 }
 
-#listBG:first-of-type p {
+.listBG:first-of-type p {
     opacity: 70%;
     border: 1px solid rgb(211, 211, 211);
     border-radius: 5px;
@@ -312,7 +312,7 @@ aside {
     font-weight: 500;
 }
 
-#listBG:last-of-type p {
+.listBG:last-of-type p {
     opacity: 70%;
     margin: 0.3;
     margin-left: 0;
@@ -328,6 +328,195 @@ aside {
     margin-right: 15em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 481px) and (min-width: 768px) {
+    nav {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        width: 84%;
+    }
 
+    nav div .btn {
+        background-color: transparent;
+        width: 7em;
+        height: 2.5em;
+        border: none;
+        border-radius: 30px;
+        font-family: 'Roboto', sans-serif;
+        padding: 0.5em 0.5em;
+        transition: background-color 0.5s ease, color 0.5s ease, opacity 0.5s ease;
+    }
+
+    header {
+        height: 23em;
+    }
+
+    header div {
+        width: 55em;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin-top: 1.3em;
+        margin-bottom: 0;
+    }
+
+    header div p {
+        margin-top: 1em;
+        width: 100%;
+    }
+
+    #trendsMain {
+        padding: 1em;
+    }
+
+      #trendsDiv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+      }
+
+      .stellaCiao {
+        display: none;
+      }
+      
+      .trends {
+        margin-bottom: 20px;
+        width: auto;
+      }      
+      
+    #bottom {
+        display: flexbox;
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    .articoli {
+        padding: 0 1em;
+        width: 46em;
+    }
+
+    aside {
+        width: 98%;
+    }
+
+    aside h3 {
+        padding-left: 2.5em;
+        padding-bottom: 1em;
+    }
+
+    .listBG {
+        width: 90%;
+        padding: 0 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #btmHr {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        width: 84%;
+    }
+
+    header {
+        height: 21em;
+    }
+
+    h1 {
+        font-size: 4em;
+        padding: 0;
+    }
+
+    header p {
+        margin-top: 0.7em;
+        width: 17em;
+    }
+
+    svg {
+        display: none;
+    }
+
+    .sparisci {
+        display: none;
+    }
+
+    #trendsMain {
+        padding: 0;
+    }
+
+    .trendsDiv {
+        display: block;
+    }
+
+    .articoli {
+        width: 10em;
+    }
+
+    .aDestra img {
+        width: 200px;
+    }
+
+    .stellaCiao {
+        display: none;
+      }   
+      
+    #bottom {
+        display: flexbox;
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    .articoli {
+        padding: 0 1em;
+        width: 28em;
+    }
+
+    aside {
+        width: 96%;
+    }
+
+    aside h3 {
+        padding-left: 2.5em;
+        padding-bottom: 1em;
+    }
+
+    .listBG {
+        width: 90%;
+        padding: 0 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #btmHr {
+        padding: 0;
+        width: 100%;
+    }
+
+    .tronca {
+        display: block;
+        max-height: 1.5em; /* altezza massima in em */
+        line-height: 1em; /* altezza della riga in em */
+        overflow: hidden;
+        margin-bottom: 0.5em;
+      }
+
+    .btmAutor img {
+        width: 1.5em;
+    }
+
+    .btmAName {
+        font-size: 0.7em;
+    }
+
+    .btmTitle {
+        font-size: 1em;
+    }
+
+    .btmText {
+        font-size: 0.8em;
+    }
 }
