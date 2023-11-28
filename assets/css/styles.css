@@ -328,7 +328,7 @@ aside {
     margin-right: 15em;
 }
 
-@media screen and (max-width: 481px) and (min-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     nav {
         padding-top: 1.5em;
         padding-bottom: 1.5em;
@@ -420,6 +420,8 @@ aside {
 @media screen and (max-width: 480px) {
     nav {
         width: 84%;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 
     header {
